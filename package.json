@@ -1,0 +1,13 @@
+{
+  "name": "snack-shack",
+  "version": "1.0.0",
+  "description": "A tiny order builder app for the Week 9 Git collision lab.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test.js"
+  },
+  "dependencies": {
+    "express": "^4.22.2"
+  }
+}
