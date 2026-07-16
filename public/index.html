@@ -2,29 +2,81 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+
   <title>Snack Shack</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
   <style>
-    body { font-family: system-ui, sans-serif; max-width: 600px; margin: 40px auto; padding: 0 20px; }
-    h1 { margin-bottom: 0.2em; }
-    #menu { list-style: none; padding: 0; }
-    #menu li { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee; }
-    #menu button { cursor: pointer; }
-    #receipt { margin-top: 30px; padding: 16px; background: #f7f7f7; border-radius: 8px; }
-    #lines div { display: flex; justify-content: space-between; padding: 2px 0; }
-    #total { font-weight: bold; font-size: 1.2em; }
+    body {
+      font-family: system-ui, sans-serif;
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h1 {
+      margin-bottom: 0.2em;
+    }
+
+    #menu {
+      list-style: none;
+      padding: 0;
+    }
+
+    #menu li {
+      display: flex;
+      justify-content: space-between;
+      padding: 8px 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    #menu button {
+      cursor: pointer;
+    }
+
+    #receipt {
+      margin-top: 30px;
+      padding: 16px;
+      background: #f7f7f7;
+      border-radius: 8px;
+    }
+
+    #lines div {
+      display: flex;
+      justify-content: space-between;
+      padding: 2px 0;
+    }
+
+    #tax-line {
+      display: block;
+      margin-top: 10px;
+    }
+
+    #total {
+      font-weight: bold;
+      font-size: 1.2em;
+    }
   </style>
 </head>
+
 <body>
   <main>
     <h1>Snack Shack</h1>
+
     <ul id="menu"></ul>
 
     <section id="receipt">
       <h2>Your order</h2>
+
       <div id="lines"></div>
 
       <!-- === ORDER CONTROLS — add your control/line directly below this line === -->
+
+      <span id="tax-line"></span>
 
       <p id="total">Total: $0.00</p>
     </section>
