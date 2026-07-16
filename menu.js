@@ -5,6 +5,12 @@ const MENU = [
   { id: "fries", name: "Fries", price: 3 },
   { id: "soda", name: "Soda", price: 2 },
 
+  {
+    id: "combo",
+    name: "Combo",
+    price: 6
+  }
+
 ];
 
 module.exports = { MENU };
