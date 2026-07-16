@@ -15,15 +15,16 @@ function calculateTotal(order) {
 
   // === PRICING RULES — add your rule directly below this line ===
 
-  // Add 13% sales tax
-  const tax = total * 0.13;
-  total += tax;
+  // Combo discount: $2 off when the order has 3 or more items
+  if (order.items.length >= 3) {
+    total -= 2;
 
-  order.lines.push({
-    id: "tax-line",
-    label: "Tax",
-    amount: tax,
-  });
+    order.lines.push({
+      id: "discount-line",
+      label: "Discount",
+      amount: -2,
+    });
+  }
 
   return Math.round(total * 100) / 100;
 }
