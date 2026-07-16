@@ -1,3 +1,5 @@
 # Snack Shack
+
 ## Features
-- [ ] (add your feature here)
+
+- [x] Menu items — Fries, Soda, and subtotal
